@@ -1,6 +1,22 @@
 menu = ['Ver la lista de contactos[ver]', 'Buscar un contacto[buscar]', 'Agregar un contactos[agregar]',
  'Eliminar un contacto[eliminar]', 'Editar contacto[editar]']
 
+def buscar_Contactos():
+    nombre1 = input("ingresa el nombre del contacto: ")
+    apellido1 = input("ingresa el apellido del contacto: ")
+    esta = False
+    for i in contactos:
+        if (i['nombre'] == nombre1 and i['apellido'] == apellido1):
+            print("\n")
+            print("nombre: ", i['nombre'])
+            print("apellido: ", i['apellido'])
+            print("numero: ", i['numero'])
+            print("\n")
+            esta = True
+    if esta == False: 
+            print("\nel contacto no existe")
+    return llamar_menu()
+
 def mostrar_menu():
     for i in menu:
         print(i)
