@@ -5,7 +5,7 @@ def eliminar_Contacto():
     for i in contactos:
         if nombre == i['nombre'] and apellido == i['apellido']:
             contactos.remove(i)
-            print("\nel contacto se elimino correctamente\n")
+            print()
             esta = True
             return llamar_menu()
     if esta == False:
