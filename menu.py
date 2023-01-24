@@ -1,6 +1,10 @@
 menu = ['Ver la lista de contactos[ver]', 'Buscar un contacto[buscar]', 'Agregar un contactos[agregar]',
  'Eliminar un contacto[eliminar]', 'Editar contacto[editar]']
 
+def mostrar_menu():
+    for i in menu:
+        print(i)
+
  def elegir_opcion():
     elige = input("\ningresa una opcion: ")
     while elige == "ver" or "buscar" or "agregar" or "eliminar" or "editar":
