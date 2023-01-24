@@ -27,3 +27,6 @@ def llamar_menu():
     mostrar_menu()
     elegir_opcion()
 
+contactos = []
+
+llamar_menu()
