@@ -22,3 +22,8 @@ def mostrar_menu():
             print("\nno eligio una opcion correcta\n")
             return llamar_menu()
 
+def llamar_menu():
+    print("\nopciones: \n")
+    mostrar_menu()
+    elegir_opcion()
+
