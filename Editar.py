@@ -27,3 +27,6 @@ def editar_Contacto():
                 else:
                     print("seleccione una opcion correcta")
                     elige = input("\nque quieres editar? \nnombre apellido numero :")
+     if esta == False:
+        print("\nel contacto no existe")
+        return llamar_menu()                
