@@ -4,7 +4,7 @@ menu = ['Ver la lista de contactos[ver]', 'Buscar un contacto[buscar]', 'Agregar
 def ver_Contactos():
     print("\nlos contactos son: \n")
     print(contactos)
-    
+    return llamar_menu()
 
 def buscar_Contactos():
     nombre1 = input("ingresa el nombre del contacto: ")
